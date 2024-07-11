@@ -45,7 +45,7 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   text-align: center;
   display: flex;
   align-items: end;
@@ -84,6 +84,8 @@ body {
 
 @media(max-width: 600px){
   .box-container {
+    margin: 7px;
+    padding: 10px;
     display: flex;
     gap: 10px;
     flex-direction: column;
