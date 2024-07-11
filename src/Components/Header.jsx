@@ -1,5 +1,4 @@
 import SearchIcon from "@mui/icons-material/Search";
-
 function Header() {
   const handleClick = () => {
     const inputValue = document.getElementById("inputValue");
@@ -10,7 +9,7 @@ function Header() {
   return (
     <div className="header">
       <div>
-        <img src="../../images/weather-1405870_1280.png" width="70px" />
+        <img src="./images/weather-1405870_1280.png" width="70px" />
       </div>
       <div className="input">
         <input
