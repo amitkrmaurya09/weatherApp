@@ -1,0 +1,21 @@
+:root {
+    /* Color Variables */
+    --primary-color: #1e90ff; /* DodgerBlue */
+    --secondary-color: #f0f8ff; /* AliceBlue */
+    --accent-color: #ff6347; /* Tomato */
+    --background-color: #ffffff; /* White */
+    --text-color: #333333; /* Dark gray */
+    
+    /* Font Variables */
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+  
+    /* Spacing Variables */
+    --small-spacing: 8px;
+    --medium-spacing: 16px;
+    --large-spacing: 24px;
+  
+    /* Border Radius */
+    --border-radius: 4px;
+  }
+  
