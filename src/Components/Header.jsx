@@ -1,11 +1,21 @@
+import React, {useState} from "react";
 import SearchIcon from "@mui/icons-material/Search";
-function Header() {
+function Header(props) {
+  const [input, setInput] = useState("");
+
+  
+
   const handleClick = () => {
-    const inputValue = document.getElementById("inputValue");
-    console.log(inputValue.value);
-    inputValue.innerText = "";
+    console.log(input);
+    props.weatherData(input);
+    console.log("up to this is correct............!")
+    setInput("");
   };
 
+ function handleChange(event){
+    const inputVal = event.target.value;
+    setInput(inputVal);
+  }
   return (
     <div className="header">
       <div>
@@ -13,6 +23,8 @@ function Header() {
       </div>
       <div className="input">
         <input
+        value={input}
+        onChange={handleChange}
           id="inputValue"
           placeholder="Search by City or zipcode"
           type="text"
