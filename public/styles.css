@@ -104,23 +104,15 @@ body {
   margin: 20px 25px 20px 25px;
 }
 .small-section{
-  padding: 10px 25px;
   display: flex;
   gap: 10px;
-  justify-content: center;
-  display: grid;
-  grid-auto-flow: column; /* Layout items in a single row */
-  grid-auto-columns: min-content; /* Adjust column width based on content */
-  overflow-x: auto; /* Allow horizontal scrolling */
-  scrollbar-width: none;
-}
+  overflow-x: auto;
+ margin: 10px 30px;
+ padding: 5px 10px;
+ }
+ 
 .small-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 7px;
- padding: 10px;
   scrollbar-width: none;
   background-color: var(--background-color-box);
   border: var(--border-color);
@@ -142,9 +134,9 @@ body {
 
   font-size: 24px;
   font-weight: 400;
-padding: 20px;
+padding: 7px;
   height: 350px;
-  min-width: 180px;
+  min-width: 150px;
   border-radius: 10px;
 margin: 5px;
   border: var(--border-color);
@@ -192,16 +184,12 @@ margin: 5px;
   white-space: nowrap;
   scrollbar-width: none;
 }
+
 .small-section{
-  padding: 10px 25px;
-  margin: 20px: 10px;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  display: grid;
-  grid-auto-flow: column; /* Layout items in a single row */
-  grid-auto-columns: min-content; /* Adjust column width based on content */
-  overflow-x: auto; /* Allow horizontal scrolling */
-  scrollbar-width: none;
+ display: flex;
+ gap: 10px;
+ overflow-x: auto;
+margin: 10px 30px;
+padding: 5px 10px;
 }
 }
