@@ -14,7 +14,7 @@ function App() {
   
   const fetchWeather = async (q) => {
     const city = await q ? q : "london";
-    const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3&aqi=yes&alerts=yes`;
+    const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3&aqi=yes&alerts=yes`;
     
     try {
       const response = await axios.get(url);
