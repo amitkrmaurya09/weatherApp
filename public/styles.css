@@ -1,7 +1,8 @@
 :root {
   /*color variable*/
-  --border-color: 1px solid rgba(0, 0, 255, 0.342);
-  --background-color-box: rgba(14, 35, 223, 0.034);
+  --border-color: 2px solid rgba(0, 0, 12, 0.442);
+  --background-color-box: rgba(118, 130, 240, 0.234);
+  --text-color: black;
 }
 * {
   padding: 0;
@@ -12,9 +13,11 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  margin-top: 10px;
   background: linear-gradient(135deg, #90caf9 0%, #64b5f6 50%, #42a5f5 100%);
   min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./images/clouds-3488632_1920.jpg);
 }
 .header {
   display: flex;
@@ -34,14 +37,22 @@ body {
   height: 2rem;
   text-align: center;
   font-size: 1.2rem;
+  color: var(--text-color);
   margin: auto;
   border-radius: 20px;
   border: var(--border-color);
-  background-color: rgba(250, 250, 250, 0.185);
+  background-color: rgba(250, 250, 250, 0.585);
 }
 .searchIcon:hover {
-  color: blue;
+  color: var(--text-color);
   font-size: 50px;
+}
+.loading-gif{
+  display: flex;
+  justify-content: center;
+}
+.loading-gif h1{
+  text-align: center;
 }
 
 .footer {
@@ -53,20 +64,18 @@ body {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
-  border: var(--border-color);
   background-color: var(--background-color-box);
 }
 
 .footer h1 {
-  color: rgba(0, 0, 0, 0.3); /* Black text with 50% opacity */
+  color: rgb(0, 0, 0); /* Black text with 50% opacity */
 }
 
 .box-container {
   position: relative;
-  margin: 50px;
-  padding: 20px;
+  padding: 60px 150px;
   height: fit-content;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   gap: 10px;
   background-color: var(--background-color-box);
@@ -75,14 +84,78 @@ body {
 
 .box-first,
 .box-second {
+  padding-bottom: 20px;
   border-radius: 10px;
-  height: 400px;
+  height: fit-content;
   width: 100%;
   background-color: var(--background-color-box);
   border: var(--border-color);
 }
+.today-weather .city-detail{
+  max-width: 700px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  background-color: var(--background-color-box);
+  border: var(--border-color);
+  margin: 20px 25px 20px 25px;
+}
+.small-section{
+  padding: 10px 25px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  display: grid;
+  grid-auto-flow: column; /* Layout items in a single row */
+  grid-auto-columns: min-content; /* Adjust column width based on content */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scrollbar-width: none;
+}
+.small-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+ padding: 10px;
+  scrollbar-width: none;
+  background-color: var(--background-color-box);
+  border: var(--border-color);
+}
+.box-second{
+  padding: 30px 20px;
+  display: grid;
+  grid-auto-flow: column; /* Layout items in a single row */
+  grid-auto-columns: min-content; /* Adjust column width based on content */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  white-space: nowrap;
+  scrollbar-width: none;
 
-@media (max-width: 600px) {
+}
+.box-second::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+.long-box{
+
+  font-size: 24px;
+  font-weight: 400;
+padding: 20px;
+  height: 350px;
+  min-width: 180px;
+  border-radius: 10px;
+margin: 5px;
+  border: var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@media (max-width: 900px) {
   .box-container {
     margin: 7px;
     padding: 10px;
@@ -95,7 +168,7 @@ body {
   .box-first,
   .box-second {
     border-radius: 10px;
-    height: 400px;
+    height: fit-content;
     width: 100%;
     background-color: var(--background-color-box);
     border: var(--border-color);
@@ -109,6 +182,26 @@ body {
     background-color: rgba(250, 250, 250, 0.185);
   }
   .box-container {
-   border: none;
+    border: none;
   }
+  .box-second{
+  display: grid;
+  grid-auto-flow: column; /* Layout items in a single row */
+  grid-auto-columns: min-content; /* Adjust column width based on content */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+.small-section{
+  padding: 10px 25px;
+  margin: 20px: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  display: grid;
+  grid-auto-flow: column; /* Layout items in a single row */
+  grid-auto-columns: min-content; /* Adjust column width based on content */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scrollbar-width: none;
+}
 }
