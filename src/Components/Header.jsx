@@ -16,6 +16,11 @@ function Header(props) {
     const inputVal = event.target.value;
     setInput(inputVal);
   }
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleClick();
+    }
+  };
   return (
     <div className="header">
       <div>
@@ -24,6 +29,7 @@ function Header(props) {
       <div className="input">
         <input
         value={input}
+        onKeyDown={handleKeyDown}
         onChange={handleChange}
           id="inputValue"
           placeholder="Search by City or zipcode"
