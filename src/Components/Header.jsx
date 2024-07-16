@@ -32,7 +32,7 @@ function Header(props) {
         onKeyDown={handleKeyDown}
         onChange={handleChange}
         id="inputValue"
-        placeholder="Search by City or zipcode"
+        placeholder="Search by City Name"
         type="text"
         />
         <SearchIcon
