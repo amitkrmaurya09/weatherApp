@@ -31,18 +31,18 @@ function Header(props) {
         value={input}
         onKeyDown={handleKeyDown}
         onChange={handleChange}
-          id="inputValue"
-          placeholder="Search by City or zipcode"
-          type="text"
+        id="inputValue"
+        placeholder="Search by City or zipcode"
+        type="text"
         />
         <SearchIcon
           className="searchIcon"
           fontSize="large"
           onClick={handleClick}
-        />
+          />
       </div>
       <div className="info">
-        <h3>About </h3>
+      <a href="#About"><h3 style={{color: "black"}}>About</h3></a>
       </div>
     </div>
   );

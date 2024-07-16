@@ -1,9 +1,21 @@
+// src/components/Footer.js
+import React from 'react';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import './Footer.css'; // Import the CSS file for styling
 
-function Footer() {
-    const date = new Date().getFullYear();
-    return<div className="footer">
-    <h2 className="h1">Copyright {date}  </h2>
-    </div>
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+        <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener noreferrer" className="footer-link">
+          <FaLinkedin size={30} />
+        </a>
+        <a href="https://github.com/your-github-id" target="_blank" rel="noopener noreferrer" className="footer-link">
+          <FaGithub size={30} />
+        </a>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

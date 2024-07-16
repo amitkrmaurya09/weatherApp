@@ -4,7 +4,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div style={styles.container}>
+    <div id='About' style={styles.container}>
       <h2 style={styles.heading}>About This Application</h2>
       <p style={styles.paragraph}>
         Welcome to the Weather App! This application provides real-time weather information for any location worldwide. Built with React, it showcases modern web development practices and provides a seamless user experience.
@@ -15,7 +15,7 @@ const About = () => {
         <p style={styles.paragraph}>
           The source code for this project is available on GitHub. Feel free to explore the repository, contribute to the project, or report any issues you find.
           <br />
-          <a style={styles.link} href="https://github.com/your-username/your-repo" target="_blank" rel="noopener noreferrer">
+          <a style={styles.link} href="https://github.com/amitkrmaurya09/weatherApp" target="_blank" rel="noopener noreferrer">
             GitHub Repository
           </a>
         </p>
@@ -26,7 +26,7 @@ const About = () => {
         <p style={styles.paragraph}>
           This application uses the OpenWeatherMap API to fetch weather data. The API provides current weather data, forecasts, and historical data for any location in the world. It is reliable, easy to use, and well-documented.
           <br />
-          <a style={styles.link} href="https://openweathermap.org/api" target="_blank" rel="noopener noreferrer">
+          <a style={styles.link} href="https://www.weatherapi.com/" target="_blank" rel="noopener noreferrer">
             OpenWeatherMap API
           </a>
         </p>
@@ -43,14 +43,6 @@ const About = () => {
         </ul>
       </section>
 
-      <section style={styles.section}>
-        <h3 style={styles.subheading}>Contact</h3>
-        <p style={styles.paragraph}>
-          If you have any questions, feedback, or suggestions, please reach out to us. We are always looking to improve and appreciate your input.
-          <br />
-          Email: <a style={styles.link} href="mailto:info@weatherapp.com">info@weatherapp.com</a>
-        </p>
-      </section>
     </div>
   );
 };
@@ -58,7 +50,7 @@ const About = () => {
 const styles = {
   container: {
     padding: '20px',
-    maxWidth: '800px',
+    maxWidth: '1400px',
     margin: '0 auto',
     lineHeight: '1.6',
     fontFamily: 'Arial, sans-serif',
