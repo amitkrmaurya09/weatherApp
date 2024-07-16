@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "./Header";
-
+import About from "./About"
 import Footer from "./Footer";
 import WeatherDetails from "./Body";
 
@@ -13,9 +13,9 @@ function App() {
   const apiKey = import.meta.env.VITE_API_KEY;
   
   const fetchWeather = async (q) => {
+    console.log(q);
     const city = await q ? q : "london";
     const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3&aqi=yes&alerts=yes`;
-    
     try {
       const response = await axios.get(url);
       const { data } = response;
@@ -75,6 +75,7 @@ function App() {
         <WeatherDetails weatherData={weatherData} /> // Pass fetched data as props
       )}
       <Footer />
+      <About />
     </>
   );
 }
